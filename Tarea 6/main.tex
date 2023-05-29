@@ -1,0 +1,309 @@
+% Template:     Auxiliar LaTeX
+% Documento:    Archivo principal
+% Versión:      8.2.2 (12/03/2023)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/auxiliares]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Tarea 6}
+\def\documentsubject {Módulo 5}
+
+\def\documentauthor {Daniel Hermosilla}
+\def\coursename {Economía}
+\def\coursecode {IN2201-2}
+
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de la Universidad}
+\def\universitydepartmentimage {departamentos/fcfm}
+\def\universitydepartmentimagecfg {height=1.75cm}
+\def\universitylocation {Santiago de Chile}
+
+% EQUIPO DOCENTE
+\def\teachingstaff {
+	\textbf{Profesora: Pamela Jervis} \\
+	Alumnos: Daniel Hermosilla, Fernanda Pereira, José Luis Tapia, Valentina Águila \\
+
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\section{Comentarios}\label{sec:Comentarios}
+
+\subsection{La competencia entre las empresas en un oligopolio siempre conduce a precios más bajos y a una mayor producción.}
+Aunque puede suceder, esto no es común, especialmente en un mercado donde hay un número reducido de empresas. Estas empresas son conscientes de las acciones de las demás, por lo que la cantidad que producen depende de la producción de las demás. Lo mismo ocurre con el precio, ya que establecen sus precios de manera que sus productos no sean mucho más caros que los de la competencia, pero tampoco tan baratos como para atraer a revendedores. En otras palabras, estas empresas intentan alcanzar un equilibrio entre ellas para maximizar sus ganancias lo cual las lleva usualmente a reducir su producción y aumentar sus precios.
+
+\subsection{En un oligopolio, cada empresa tiene un control total sobre el mercado y el precio del producto.}
+En un oligopolio, ninguna empresa tiene un control total, ya que su desempeño está condicionado por las acciones de otras empresas que participan en el mismo mercado. Aunque algunas empresas pueden tener una influencia mayor que otras al momento de fijar precios o su producción, ninguna ejerce un control completo sobre el mercado.
+
+\subsection{Las empresas en un oligopolio a menudo limitan la producción para mantener los precios altos y evitar la competencia}
+A pesar de que es una practica con la que como consumidores nos hemos enfrentado, la colusión entre las empresas no es beneficiosa para estas a largo plazo, por lo que no es tan común debido a que existen organismos reguladores que penalizan este tipo de acciones.
+
+\subsection{La entrada de nuevos competidores en un oligopolio siempre conduce a precios más bajos y a una mayor producción.}
+En teoría, la entrada de un nuevo competidor ejercería presión sobre las empresas existentes en el mercado, ya que su presencia traería nuevas ofertas que provocarían reacciones en el resto de las empresas. Sin embargo, hay otros factores a considerar. Es posible que la nueva empresa no tenga la fortaleza suficiente para mantenerse, y es posible que las empresas existentes no reaccionen de inmediato a la nueva competencia, ya que pueden tener la estabilidad necesaria para continuar su producción normalmente. \\
+
+Por ejemplo, si se abriera una nueva ferretería, las grandes empresas establecidas en el área no necesariamente responderían de inmediato a esta nueva competencia. Los compradores, por su parte, pueden no sentirse atraídos por la nueva ferretería debido a la costumbre, la comodidad o simplemente por desconocimiento de la marca. Esto podría llevar a la nueva empresa a la quiebra rápidamente. Por lo tanto, el crecimiento y la permanencia de la nueva empresa en el mercado dependerán del plan de ventas, las estrategias de marketing y el apoyo que reciba
+
+\section{Pregunta 2}\label{sec:pregunta-2}
+
+\subsection{Inciso a}
+
+Dado que se tiene una competencia de tipo Cournot, las empresas buscan maximisar utilidades sin importarles las otras empresas.
+Por ende, en sus funciones objetivos la cantidad de las otras empresas son constantes. Entonces, se llegan a las siguientes utilidades
+para cada firma: \\
+
+$$\Pi=\begin{cases}\text{max}_{q_a}(d-(q_a+q_b+q_c))\cdot q_a - a_A\cdot q_a&\text{Empresa A}\\\\
+				\text{max}_{q_b}(d-(q_a+q_b+q_c))\cdot q_b - b_B\cdot q_b&\text{Empresa B}\\\\
+				\text{max}_{q_c}(d-(q_a+q_b+q_c))\cdot q_c - c_C\cdot q_c&\text{Empresa C}\end{cases}\\$$
+
+
+Por lo tanto, aplicando la condición de primer orden, se deriva para encontrar la cantidad óptima, sabiendo que la cantidad de las otras
+empresas se consideran como constantes:\\
+
+$$\Pi_{\text{max}}=\begin{cases}\text{max}_{q_a}-2q_a+d-q_c-q_b-a_A=0\implies q_{a}^{*}=\frac{d - q_b - q_c - a_A}{2}&\text{Empresa A}\\\\
+				\text{max}_{q_b}-2q_{b}+ d-q_a-q_c - b_B = 0\implies q_{b}^{*}=\frac{d-q_a - q_c - b_B}{2}&\text{Empresa B}\\\\
+				\text{max}_{q_c}-2q_{c}+ d-q_a-q_b - c_C = 0\implies q_{c}^{*}=\frac{d-q_a-q_b-c_C}{2}&\text{Empresa C}\end{cases}\\$$
+
+Por último, resolviendo el sistema de ecuaciones: \\
+
+$$\Pi_{\text{max}}=\begin{cases}
+			   	q_a =\frac{1}{4}\left[d -3c_C + b_B + \frac{a_A}{2}\right]&\text{Empresa A}\\\\
+				q_b = \frac{1}{4}\left(d-c_C - 3b_B - \frac{a_A}{2}\right)&\text{Empresa B}\\\\
+				q_c =\frac{1}{4}\left( \frac{1}{4}(d - 3C_c + b_B + \frac{a_A}{2})\right)&\text{Empresa C}\end{cases}\\$$
+
+Dado que se tiene la cantidad de producción de cada empresa, se calcula el equilibrio de Cournot al sumar todas estas cantidades:
+\begin{align*}
+P &= d - \frac{1}{4}(3d - c_C + b_B - \frac{a_A}{2})
+\end{align*}\\
+
+Por último, como se tiene el precio, la utilidad de cada empresa se calcula al reemplazar el precio en la función utilidad calculada al comienzo: \\
+
+$$\Pi=\begin{cases}\frac{1}{48}\left[3d^2 - c_{C}^{2} - b_{B}^{2} + 2dc_C + 2db_B - 2c_C b_B - 11a_A d + 3a_A c_C + 3a_A b_B -\frac{7a_{A}^{2}}{4}\right]&\text{Empresa A}\\\\
+				\frac{1}{48}\left[ (3d - c_C - b_B - \frac{a_A}{2})(d + c_C + \frac{a_A}{2} - 3b_B)\right]&\text{Empresa B}\\\\
+				\frac{1}{48}\left[ \left( d - 3C_c + b_B + \frac{a_A}{2} \right)\left( 2d-6c-2b+a \right) \right]&\text{Empresa C}\end{cases}$$
+
+\subsection{Inciso b}
+
+Bajo el nuevo supuesto, se maximizarían la suma de utilidades de cada firma, es decir:
+
+\begin{align*}
+	\Pi &= \text{max}_{q_a,q_b,q_c} \Pi_a + \Pi_b + \Pi_c \\\\
+	\Pi &= (q_a d - q_{a}^{2} - q_a q_b - q_a q_c - aq_a) + (q_b d - q_a q_b - q_{b}^{2} - q_b q_c - b_B q_b) + (q_c d - q_a q_c - q_b q_c - q_{c}^{2}-c_C q_c)
+\end{align*}\\
+
+Entonces, se quedan tres ecuaciones:
+
+$$\Pi=\begin{cases}
+		  \frac{\partial\Pi}{\partial q_a} &= d-2q_a - 2q_b - 2q_c - a_A\\\\
+		  \frac{\partial\Pi}{\partial q_b} &= d-2q_a - 2q_b - 2q_c - b_B\\\\
+		  \frac{\partial\Pi}{\partial q_c} &= d-2q_a - 2q_b - 2q_c - c_C
+	  \end{cases}$$\\
+
+Al igualar la primera con la segunda, se llega que $a_A = b_B$. De la misma forma, si se iguala la segunda con la tercera ecuación
+se llega que $c_C = b_B = a_A = x$. Por lo tanto, se queda con la siguiente ecuación:
+
+\begin{align*}
+	d-2q_a-2q_b-2q_c-x &= 0\\\\
+	d - 2Q - x &= 0\\\\
+	Q^* = \frac{d-x}{2}
+\end{align*}\\
+
+Suponiendo que se dividen las cantidades en partes iguales, se llega que:
+
+$$q_{a}^{*} = q_{b}^{*} = q_{c}^{*}=\frac{d-x}{6}$$\\
+
+Por lo tanto, dejándolo en la función de la demanda:
+
+$$P(Q^*) = \frac{d+x}{2}$$\\
+
+Por último, sacando las utilidades de la empresa A, que sabemos que son las mismas que la empresa b y c:
+
+	$$\Pi_a = \frac{d-x}{6}\cdot d - (\frac{d-x}{6})^2 - (\frac{d-x}{6})^2 - (\frac{d-x}{6})^2 - a_A(\frac{d-x}{6})$$
+
+Simplificando al máximo e imponiendo que  $a_A = x$\\
+
+$$\Pi_a = \frac{d^2-2dx}{12} = \Pi_b = \Pi_c$$
+
+
+\subsection{Inciso c}
+
+Al comparar las utilidades del primer inciso con el segundo, se puede observar que las utilidades están divididas por $48$, es decir, es una utilidad muy pequeña, por lo que no hay incentivo para romper el acuerdo
+
+\subsection{Inciso d}
+
+Nuevamente se buscan las utilidades de cada firma por separado. Por los cálculos del inciso A, sabemos que la empresa B y C mantendrían su cantidad de producción respectiva. Calculando la utilidad de A:
+
+\begin{align*}
+\Pi_a &=d-2q_a-q_b-q_c-\frac{a}{2}\\
+\implies q_{a}^{*} &=\frac{1}{2}\left[d-q_b-q_c-\frac{a}{2}\right]
+\end{align*}\\
+
+Repitiendo la metodología del inciso A, nuevamente se resuelve el siguiente sistema de ecuación para las tres cantidades respectivas y se llega a lo siguiente:
+
+\begin{align*}
+	q_{a}^{*} &=\frac{1}{2}\left[d-q_b-q_c-\frac{a}{2}\right]\\
+	q_{b}^{*}&=\frac{d+q_b - q_c - 2b_B + \frac{a_A}{2}}{4}\\
+	q_{c}^{*}&=\frac{d-q_b+q_c-2b_B + \frac{a_A}{2}}{4}
+\end{align*}\\
+
+Si se reemplaza en la función demanda se llega a lo siguiente:
+
+$$P=\frac{1}{2}(q_b + q_c + 2b_B)$$
+
+\subsection{Inciso e}
+
+Si la empresa C se va, queda lo siguiente:
+
+$$\Pi=\begin{cases}
+(d-(q_a+q_b))\cdot q_a - a_A q_a\\\\
+(d-(q_a+q_b))\cdot q_b - b_B\cdot q_B
+\end{cases}$$
+
+Si se impone la condición de primer orden para ambos casos, se llega que:
+
+\begin{align*}
+	\frac{\partial\Pi_a}{\partial q_a} &= \frac{d-q_b-a_A}{2}=q_A\\
+	\frac{\partial\Pi_b}{\partial q_b} &= \frac{d-q_a-b_B}{2}=q_B
+\end{align*}\\
+
+Por lo tanto, el equilibrio se logra bajo el siguiente cálculo:
+
+\begin{align*}
+	P &= d-(\frac{d-q_b-a_A}{2}+\frac{d-q_a-b_B}{2})\\
+	P &= d-\frac{1}{2}(q_b - q_a - a_A - b_B)
+\end{align*}
+
+Y por último, las utilidades respectivas serían:
+
+\begin{align*}
+	U_A &= (d-\frac{d-q_B-a_A}{2}-q_b)(\frac{d-q_b-a_A}{2})-a_A(\frac{d-q_b-a_A}{2})\\
+	U_B &= (d-q_a - \frac{d-q_a-b_B}{2})(\frac{d-q_a-b_B}{2})-b_B(\frac{d-q_a-b_B}{2})
+\end{align*}
+
+
+
+
+
+
+
+\section{Pregunta 3}\label{sec:pregunta-3}
+
+Se tienen los siguientes costos de producción:
+
+	\begin{align*}
+		  C_1(q_1) &= a + b \cdot q_1\\
+		  C_2(q_2) &= c + d \cdot q_2
+	\end{align*}\\
+
+Y la demanda del mercado, dada por la siguiente expresión:
+
+	$$P = e - f\cdot Q + g\cdot S$$\\
+
+\subsection{Inciso a}
+
+Para que el equilibrio de Nash en cantidades sea simétrico nos pondremos en distintos casos, partiendo para el caso de la Firma 1. \\
+
+	\begin{align*}
+		  \Pi(q_1,q_2) &= q_1(e-f\cdot Q + g\cdot S)-(a+b\cdot q_1)\\
+		  						&= q_1 e - q_1 f(q_1 + q_2) + q_1 gS - a - bq_1\\
+		  						&= q_1 e - q_{1}^{2} f - q_1 q_2 f + gS - b\\
+		  \frac{\partial \Pi}{\partial q_1}(q_1, q_2) &= e - 2q_1 f-q_2 f + gS-b = 0
+	\end{align*}\\
+
+Para el caso de la firma 2:
+
+	\begin{align*}
+		  \Pi(q_1,q_2) &= q_2(e-f\cdot Q + g\cdot S)-(C + \cdot dq_2)\\
+		  						&= q_2 e - q_2 f(q_1 + q_2) + q_2 gS - C - dq_2\\
+		  						&= q_2 e - q_{2}^{2} f - q_1 q_{2}f + q_2 gS - C - dq_2\\
+		  \frac{\partial \Pi}{\partial q_1}(q_1, q_2) &= e - 2q_2 f-q_1 f + gS-d = 0
+	\end{align*}\\
+
+Ahora, para encontrar el equilibrio de Nash, $q_{1}^{*} + q_{2}^{*} = q^{*}$. Entonces, igualando ambas ecuaciones:
+
+	\begin{align*}
+		   e - 2q_1 f-q_2 f + gS-b &= e - 2q_2 f-q_1 f + gS-d\\
+		  b &= d
+	\end{align*}\\
+
+Entonces, de la primera ecuación se obtiene que:
+
+	\begin{align*}
+		  e-2q^* f - q^* f + gS - b &= 0\\
+		  e - 3q^{*} f + gS - b &= 0\\
+		  q^* &=\frac{e + gS - b}{3f}\;\;\; f \neq 0
+	\end{align*}\\
+
+De la misma forma, de la segunda ecuación se obtiene que:
+
+	\begin{align*}
+		  q^* &= \frac{e + gS - d}{3f}\\
+		  \text{Imponemos}\; d &= b\\
+		  q^* &= \frac{e + gS - b}{3f}
+	\end{align*}\\
+
+Por último, para que $q^*\neq 0$, $e + gS - d\neq 0$.
+
+\subsection{Inciso b}
+
+	Bajo el supuesto que ambas empresas deciden coordinarse para producir la cantidad total del mercado, se llega a lo siguiente:
+
+	\begin{align*}
+		  \Pi (Q) &= Q(P(Q))-(C_1 + C_2)\\
+		  		&= Q(e-fQ + gS)-\left[ (a+bq_1) + (c + dq_2) \right]
+	\end{align*}\\
+
+En la pregunta anterior se llego que $d=b$ por el equilibrio de Nash, entonces:
+
+	\begin{align*}
+		  \Pi(Q)&= Q(e - fQ + gS) - (a + dq_1 + c + dq_2)\\
+		  		&= Qe - fQ^2 + gSQ - (a + c + d(q_1 + q_2))\\
+		  		&= Qe - fQ^2 + gSQ - (a + c + dQ)\\
+		  		&= Qe - fQ^2 + gsQ - a - c - dQ\\
+		  \frac{\partial\Pi}{\partial Q}(Q) &= e - 2Qf + gs - d = 0\\
+		  \implies Q^* &= \frac{e + gS - d}{2f}
+		  \end{align*} \\
+
+Ahora, ocupando la función de la demanda, se tiene que:
+
+	\begin{align*}
+		P^* (Q) &= e - f\cdot Q^* + gS\\
+				&= e - \frac{e + gs - d}{2} + gS\\
+				&= \frac{2e-e-gS-d+2gS}{2}\\
+		P^*		&= \frac{e + gS - d}{2}
+	\end{align*}
+
+\subsection{Inciso d}
+
+	Al ofrecer una calidad intermedia, entonces la constante $S$ llegaría a ser menor. Además, en la variable $Q$ de la demanda se añadiría una nueva variable $q_3$.
+	Por lo tanto, sabiendo que cada firma busca maximizar sus utilidades cuando no hay colusión, entonces buscamos el equilibrio de Nash simétrico, que es determinada por la siguiente fórmula:
+
+	\insertequation{q^*=\frac{a-c}{(N+1)b}} \\
+
+	Por lo tanto, reemplazando con la información que tenemos, se llega que la cantidad producida es:
+
+
+
+
+% FIN DEL DOCUMENTO
+\end{document}
